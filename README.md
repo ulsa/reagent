@@ -77,8 +77,8 @@ You mount the component into the DOM like this:
 
 ```clj
 (defn mountit []
-  (reagent/render-component [childcaller]
-                            (.-body js/document)))
+  (reagent/render [childcaller]
+                  (.-body js/document)))
 ```
 
 assuming we have imported Reagent like this:
